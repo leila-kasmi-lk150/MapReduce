@@ -3,10 +3,6 @@ from collections import defaultdict
 with open("web_access.txt", "r") as f:
     data = [line.strip().split() for line in f]
 
-
-from collections import defaultdict
-import re
-
 def mapper(logs):
     monthCount = defaultdict(int)
     monthIpCounts = defaultdict(lambda: defaultdict(int))   
